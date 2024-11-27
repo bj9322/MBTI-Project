@@ -1,0 +1,60 @@
+{
+  "testResults": [
+    {
+      "id": "f91e",
+      "userId": null,
+      "result": "ESTJ",
+      "visibility": true,
+      "createdAt": "2024-11-26T11:38:45.568Z"
+    },
+    {
+      "id": "665a",
+      "userId": null,
+      "result": "ESTJ",
+      "visibility": true,
+      "createdAt": "2024-11-26T11:39:43.300Z"
+    },
+    {
+      "id": "a354",
+      "userId": null,
+      "result": "ESTJ",
+      "visibility": true,
+      "createdAt": "2024-11-26T11:46:34.629Z"
+    },
+    {
+      "id": "f7d3",
+      "userId": null,
+      "result": "ESTJ",
+      "visibility": true,
+      "createdAt": "2024-11-26T11:48:50.762Z"
+    },
+    {
+      "id": "ccec",
+      "userId": null,
+      "result": "ESTJ",
+      "visibility": true,
+      "createdAt": "2024-11-26T11:49:26.507Z"
+    },
+    {
+      "id": "1cc8",
+      "userId": null,
+      "result": "ESTJ",
+      "visibility": true,
+      "createdAt": "2024-11-26T11:51:34.550Z"
+    },
+    {
+      "id": "4f50",
+      "userId": null,
+      "result": "ESTJ",
+      "visibility": true,
+      "createdAt": "2024-11-26T11:53:05.149Z"
+    },
+    {
+      "id": "1b49",
+      "userId": null,
+      "result": "INFP",
+      "visibility": true,
+      "createdAt": "2024-11-26T11:57:45.093Z"
+    }
+  ]
+}
