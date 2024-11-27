@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 
 const AuthForm = ({ mode, onSubmit }) => {
   const [formData, setFormData] = useState({
@@ -13,13 +14,13 @@ const AuthForm = ({ mode, onSubmit }) => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); 
-    onSubmit(formData); 
+    e.preventDefault();
+    onSubmit(formData);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
+    <Form onSubmit={handleSubmit}>
+      <Input
         type="text"
         name="id"
         value={formData.id}
@@ -27,7 +28,7 @@ const AuthForm = ({ mode, onSubmit }) => {
         placeholder="아이디"
         required
       />
-      <input
+      <Input
         type="password"
         name="password"
         value={formData.password}
@@ -35,11 +36,8 @@ const AuthForm = ({ mode, onSubmit }) => {
         placeholder="비밀번호"
         required
       />
-      <button type="submit">
-        {mode === "login" ? "로그인" : "회원가입"}
-      </button>
       {mode === "signup" && (
-        <input
+        <Input
           type="text"
           name="nickname"
           value={formData.nickname}
@@ -48,8 +46,46 @@ const AuthForm = ({ mode, onSubmit }) => {
           required
         />
       )}
-    </form>
+      <Button type="submit">
+        {mode === "login" ? "로그인" : "회원가입"}
+      </Button>
+    </Form>
   );
 };
 
 export default AuthForm;
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+`;
+
+const Input = styled.input`
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: #cc0000;
+    outline: none;
+  }
+`;
+
+const Button = styled.button`
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #cc0000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #ff6666;
+  }
+`;

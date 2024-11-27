@@ -1,60 +1,20 @@
 {
   "testResults": [
     {
-      "id": "f91e",
-      "userId": null,
-      "result": "ESTJ",
+      "id": "32e7",
+      "userId": "JUNSEOK",
+      "result": "ESFJ",
+      "description": "ESFJ: 세상의 평화를 지키는 사회적 중재자! ESFJ는 사람들과의 관계를 중시하며, '모두가 행복할 수 있다면 나도 행복해'라는 마인드를 가지고 있어요. 이들은 다른 사람들을 도와주는 데에서 진정한 기쁨을 느끼며, 언제나 주위 사람들의 요구에 민감하게 반응해요. 그러나 가끔은 너무 자신을 희생하는 경우가 있어, '내 감정도 소중해'라고 말할 필요가 있을지도 몰라요.",
       "visibility": true,
-      "createdAt": "2024-11-26T11:38:45.568Z"
+      "createdAt": "2024-11-27T10:59:00.566Z"
     },
     {
-      "id": "665a",
-      "userId": null,
-      "result": "ESTJ",
+      "id": "5fd3",
+      "userId": "JUNSEOK",
+      "result": "ISTJ",
+      "description": "ISTJ: 철두철미한 실천가! ISTJ는 세상에서 가장 믿음직스러운 사람들입니다. 이들은 항상 약속을 지키며, 맡은 일을 끝까지 해내는 성격을 가지고 있어요. '노력은 배신하지 않는다'라는 신념으로 하루하루를 살아가고 있죠. 그러나 가끔은 너무 현실적이어서 '조금만 여유를 가져도 괜찮지 않을까?'라는 생각을 주변 사람들에게 하게 만들 때가 있어요. 하지만 그들이 하는 일은 언제나 완벽합니다.",
       "visibility": true,
-      "createdAt": "2024-11-26T11:39:43.300Z"
-    },
-    {
-      "id": "a354",
-      "userId": null,
-      "result": "ESTJ",
-      "visibility": true,
-      "createdAt": "2024-11-26T11:46:34.629Z"
-    },
-    {
-      "id": "f7d3",
-      "userId": null,
-      "result": "ESTJ",
-      "visibility": true,
-      "createdAt": "2024-11-26T11:48:50.762Z"
-    },
-    {
-      "id": "ccec",
-      "userId": null,
-      "result": "ESTJ",
-      "visibility": true,
-      "createdAt": "2024-11-26T11:49:26.507Z"
-    },
-    {
-      "id": "1cc8",
-      "userId": null,
-      "result": "ESTJ",
-      "visibility": true,
-      "createdAt": "2024-11-26T11:51:34.550Z"
-    },
-    {
-      "id": "4f50",
-      "userId": null,
-      "result": "ESTJ",
-      "visibility": true,
-      "createdAt": "2024-11-26T11:53:05.149Z"
-    },
-    {
-      "id": "1b49",
-      "userId": null,
-      "result": "INFP",
-      "visibility": true,
-      "createdAt": "2024-11-26T11:57:45.093Z"
+      "createdAt": "2024-11-27T11:18:02.330Z"
     }
   ]
 }

@@ -2,13 +2,13 @@ import axios from 'axios';
 
 const API_URL = 'https://moneyfulpublicpolicy.co.kr'; // 인증인가 서버
 
-// 로그인 로직
+// 로그인 로직, 사용자 정보 콘솔 확인
 export const login = async (userData) => {
-  const response = await axios.post(`${API_URL}/login`, userData); // 엔드포인트 변경
+  const response = await axios.post(`${API_URL}/login`, userData);
   localStorage.setItem("token", response.data.accessToken);
+
   const userProfile = await getUserProfile();
   console.log("로그인 후 사용자 정보:", userProfile);
-
   return { ...response.data, userProfile };
 };
 
@@ -20,37 +20,19 @@ export const register = async (userData) => {
 
 // 사용자 정보 가져오기 로직
 export const getUserProfile = async () => {
-  try {
-    const token = localStorage.getItem("token"); // 로컬 스토리지에서 토큰 가져오기
-    if (!token) {
-      throw new Error("로그인 토큰이 없습니다. 다시 로그인해주세요.");
-    }
-
+    const token = localStorage.getItem("token"); 
     const response = await axios.get(`${API_URL}/user`, {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`, // Authorization 헤더에 토큰 추가
+        Authorization: `Bearer ${token}`, 
       },
     });
-
     return response.data;
-  } catch (error) {
-    console.error(
-      "사용자 정보 가져오기 실패:",
-      error.response?.data || error.message
-    );
-    if (error.response?.data?.message) {
-      throw new Error(error.response.data.message);
-    }
-    throw new Error("사용자 정보를 가져오는 중 문제가 발생했습니다.");
-  }
 };
 
 // 프로필 업데이트 로직
 export const updateProfile = async (formData) => {
-  console.log(formData)
-  try {
-    const token = localStorage.getItem("token"); // 토큰 가져오기
+    const token = localStorage.getItem("token");
     const response = await axios.patch(`${API_URL}/profile`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
@@ -58,8 +40,10 @@ export const updateProfile = async (formData) => {
       },
     });
     return response.data;
-  } catch (error) {
-    console.error("프로필 업데이트 실패:", error.response?.data || error.message);
-    throw error;
-  }
+};
+
+// 사용자 Id 값 추출, 내 게시물 삭제 시 사용
+export const getUserId = async () => {
+  const userProfile = await getUserProfile();
+  return userProfile.id; 
 };
