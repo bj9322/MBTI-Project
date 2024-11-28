@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://brainy-tarry-cerise.glitch.me';
+const API_URL = 'https://brainy-tarry-cerise.glitch.me/testResults';
 
 // 테스트 결과 
 export const getTestResults = async () => {
