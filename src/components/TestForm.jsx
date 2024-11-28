@@ -17,7 +17,7 @@ const TestForm = ({ onSubmit }) => {
     e.preventDefault();
     console.log("Answers:", answers);
     onSubmit(answers);
-  };
+  }; 
 
   return (
     <FormContainer>
