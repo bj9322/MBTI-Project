@@ -13,7 +13,7 @@ const TestResult = () => {
       const id = await getUserId();
       setUserId(id);
 
-      const resultsResponse = await axios.get("http://localhost:5000/testResults");
+      const resultsResponse = await axios.get('https://brainy-tarry-cerise.glitch.me');
       setTestResults(resultsResponse.data);
     };
 
@@ -33,7 +33,7 @@ const TestResult = () => {
     });
 
     if (result.isConfirmed) {
-      await axios.delete(`http://localhost:5000/testResults/${id}`);
+      await axios.delete(`https://brainy-tarry-cerise.glitch.me/${id}`);
       setTestResults((prevResults) =>
         prevResults.filter((result) => result.id !== id)
       );

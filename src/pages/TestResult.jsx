@@ -6,7 +6,7 @@ const TestResult = () => {
   const [testResults, setTestResults] = useState([]);
 
   const getTestResults = async () => {
-      const response = await axios.get("http://localhost:5000/testResults");
+      const response = await axios.get('https://brainy-tarry-cerise.glitch.me');
       const results = response.data;
 
       const filteredResults = results.filter(
