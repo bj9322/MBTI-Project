@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/testResults'; // JSON 서버
+const API_URL = 'https://brainy-tarry-cerise.glitch.me';
 
 // 테스트 결과 
 export const getTestResults = async () => {
